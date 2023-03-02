@@ -1,0 +1,24 @@
+[project]
+name = 'sip-010-approval'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.sip-010-trait-approve]
+path = 'contracts/sip-010-trait-approve.clar'
+clarity_version = 1
+epoch = 2.0
+
+[contracts.example-token]
+path = 'contracts/example-token.clar'
+clarity_version = 1
+epoch = 2.0
+[repl.analysis]
+# passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
